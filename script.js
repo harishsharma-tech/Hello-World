@@ -56,4 +56,4 @@ var val = [2,true,"hello World",undefined,null]
 
 console.log("typeof val is: " + typeof val, ", " + "value of val: " + val)
 
-//b8ec2a87cdf1eb2ad2be3f984b68edd1b2668d99 gitpat
+//b8ec2a87cdf1eb2ad2be3f984b68edd1b2668d99
