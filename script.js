@@ -128,11 +128,21 @@ var z = undefined
 
 //The “this” keyword refers to the object that the function is a property of. 
 //What is currying in JavaScript?
+// Currying is an advanced technique to transform a function of arguments n, to n functions of one or
+// less arguments. 
+// function add (a) {
+//     return function(b){
+//     return a + b;
+//     }
+//    }
+//   console.log(add(3)(4))
 
-function add (a) {
-    return function(b){
-    return a + b;
-    }
-   }
-  console.log(add(3)(4))
-   
+  var globalVariable = "Hello world";
+  function sendMessage(){
+   return globalVariable; // can access globalVariable since it's written in global space
+  }
+  function sendMessage2(){
+   return sendMessage(); // Can access sendMessage function since it's written in global space
+  }
+  sendMessage2(); // Returns “Hello world”
+  
